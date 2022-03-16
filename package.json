@@ -1,0 +1,18 @@
+{
+  "name": "@yandeu/normalize-for-search",
+  "description": "Un-accents and un-umlauts characters in a string.",
+  "version": "0.0.0",
+  "main": "lib/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "Yannick Deubel (https://github.com/yandeu)",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^27.5.1",
+    "typescript": "^4.6.2"
+  }
+}
