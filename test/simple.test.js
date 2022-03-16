@@ -4,6 +4,11 @@ test('to lowercase', () => {
   expect(normalizeForSearch('Yannick')).toBe('yannick')
 })
 
+test('empty string', () => {
+  expect(normalizeForSearch('')).toBe('')
+  expect(normalizeForSearch(' ')).toBe('')
+})
+
 test('trim', () => {
   const result = 'yannick'
   expect(normalizeForSearch(' Yannick')).toBe(result)
