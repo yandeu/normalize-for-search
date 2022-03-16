@@ -3,7 +3,7 @@
  * @copyright    Copyright (c) 2016 Ivan Krechetov
  * @copyright    Copyright (c) 2022 Yannick Deubel
  * @license      {@link https://github.com/ikr/normalize-for-search#license-mit | MIT}
- * @license      {@link https://github.com/yandeu/TODO | MIT}
+ * @license      {@link https://github.com/yandeu/normalize-for-search/blob/main/LICENSE | MIT}
  */
 
 export const normalizeForSearch = (str: string) => {
