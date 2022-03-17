@@ -83,5 +83,8 @@ export const normalizeForSearch = (str: string) => {
   normalized = normalized.replace(/oe/g, 'o')
   normalized = normalized.replace(/ue/g, 'u')
 
+  // remove too many spaces
+  normalized = normalized.replace(/\s+/g, ' ')
+
   return normalized
 }
