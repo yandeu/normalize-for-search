@@ -15,6 +15,11 @@ test('trim', () => {
   expect(normalizeForSearch('Yannick ')).toBe(result)
 })
 
+test('second name', () => {
+  const result = 'celine diaz'
+  expect(normalizeForSearch('Céline Díaz')).toBe(result)
+})
+
 test('umlaut', () => {
   const result = 'zmorgele'
   expect(normalizeForSearch('Zmörgele')).toBe(result)
