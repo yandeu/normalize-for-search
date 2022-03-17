@@ -6,6 +6,9 @@
     "target": "ES2015",
     "module": "CommonJS",
 
+    "declaration": true,
+    "declarationMap": true,
+
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
