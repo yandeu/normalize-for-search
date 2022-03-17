@@ -6,13 +6,15 @@
   "type": "commonjs",
   "scripts": {
     "build": "tsc",
-    "test": "jest"
+    "test": "jest",
+    "prepublishOnly": "rimraf lib && npm run build && npm test"
   },
   "keywords": [],
   "author": "Yannick Deubel (https://github.com/yandeu)",
   "license": "MIT",
   "devDependencies": {
     "jest": "^27.5.1",
+    "rimraf": "^3.0.2",
     "typescript": "^4.6.2"
   }
 }
