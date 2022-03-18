@@ -71,9 +71,15 @@ export const normalizeForSearch = (str: string) => {
   }
 
   let normalized = ''
-  str = str.toLowerCase()
-  str = str.trim()
 
+  // lowerCase
+  str = str.toLowerCase()
+  // trim
+  str = str.trim()
+  // standard normalization
+  str = str.normalize('NFKD').replace(/[\u0300-\u036F]/g, '')
+
+  // custom normalization
   for (let i = 0, l = str.length; i < l; i = i + 1) {
     normalized = normalized + filter(str.charAt(i))
   }

@@ -1,5 +1,9 @@
 const { normalizeForSearch } = require('../lib/index')
 
+test('some char test', () => {
+  expect(normalizeForSearch('æ ä á ae e é ß')).toBe('a a a a e e ss')
+})
+
 test('to lowercase', () => {
   expect(normalizeForSearch('Yannick')).toBe('yannick')
 })
