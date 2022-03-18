@@ -1,4 +1,3 @@
-const { normalizeForSearch } = require('../lib/index')
 const { Database } = require('../lib/database')
 
 const db = new Database()
