@@ -1,8 +1,12 @@
 /**
- * @author       Yannick Deubel (https://github.com/yandeu)
+ * @author       Ivan Krechetov (https://github.com/ikr)
  * @copyright    Copyright (c) 2016 Ivan Krechetov
- * @copyright    Copyright (c) 2022 Yannick Deubel
  * @license      {@link https://github.com/ikr/normalize-for-search#license-mit | MIT}
+ */
+
+/**
+ * @author       Yannick Deubel (https://github.com/yandeu)
+ * @copyright    Copyright (c) 2022 Yannick Deubel
  * @license      {@link https://github.com/yandeu/normalize-for-search/blob/main/LICENSE | MIT}
  */
 
