@@ -3,10 +3,14 @@
   "description": "Un-accents and un-umlauts characters in a string.",
   "version": "0.0.1",
   "main": "lib/index.js",
-  "type": "commonjs",
+  "types": "lib/index.d.ts",
+  "type": "module",
+  "engines": {
+    "node": ">=16"
+  },
   "scripts": {
     "build": "tsc",
-    "test": "jest --coverage",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage",
     "prepublishOnly": "rimraf lib && npm run build && npm test"
   },
   "keywords": [],
@@ -15,6 +19,6 @@
   "devDependencies": {
     "jest": "^27.5.1",
     "rimraf": "^3.0.2",
-    "typescript": "^4.6.2"
+    "typescript": "^4.7.4"
   }
 }

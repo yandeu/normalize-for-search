@@ -1,4 +1,4 @@
-const { Database } = require('../lib/database')
+import { Database } from '../lib/database.js'
 
 const db = new Database()
 db.set('Céline', 'Deniel')
@@ -6,9 +6,10 @@ db.set('Yannick', 'Müller')
 db.set('Jérôme', 'Vincent')
 db.set('Jules', 'César')
 
+let res = []
+
 test('search Céline', () => {
   const celine = 'Céline'
-  let res = []
 
   res = db.search('Celine')
   expect(res.length).toBe(1)

@@ -1,4 +1,4 @@
-const { normalizeForSearch } = require('../lib/index')
+import { normalizeForSearch } from '../lib/index.js'
 
 describe('french characters', () => {
   test('la cédille', () => {

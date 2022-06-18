@@ -1,4 +1,4 @@
-const { normalizeForSearch } = require('../lib/index')
+import { normalizeForSearch } from '../lib/index.js'
 
 test('some char test', () => {
   expect(normalizeForSearch('æ æ̃ ä á ae ç e é ß')).toBe('a a a a a c e e ss')

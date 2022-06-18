@@ -1,4 +1,4 @@
-const { normalizeForSearch } = require('../lib/index')
+import { normalizeForSearch } from '../lib/index.js'
 
 describe('german characters', () => {
   test('umlaut', () => {
