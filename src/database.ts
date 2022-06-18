@@ -1,4 +1,6 @@
-// for testing purpose only
+/**
+ * This file for testing purpose only.
+ */
 
 import { normalizeForSearch } from '.'
 
@@ -13,22 +15,26 @@ interface User {
 export class Database {
   private _db: Map<ID, User> = new Map()
 
-  private get id(): string {
+  private makeId(): string {
     let id = ''
     while (id.length < 8) id = Math.random().toString(16).substring(2)
     return id
   }
 
-  public set(firstName: string, lastName: string): void {
+  public set(firstName: string, lastName: string): ID {
     firstName = firstName.trim()
     lastName = lastName.trim()
 
-    this._db.set(this.id, {
+    const id = this.makeId()
+
+    this._db.set(id, {
       firstName,
       lastName,
       fullName_search: normalizeForSearch(firstName + ' ' + lastName),
       fullName_search_reverse: normalizeForSearch(lastName + ' ' + firstName)
     })
+
+    return id
   }
 
   public get(id: ID): User | undefined {

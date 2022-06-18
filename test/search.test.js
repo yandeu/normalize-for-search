@@ -1,7 +1,8 @@
 import { Database } from '../lib/database.js'
 
 const db = new Database()
-db.set('Céline', 'Deniel')
+
+const someId = db.set('Céline', 'Deniel')
 db.set('Yannick', 'Müller')
 db.set('Jérôme', 'Vincent')
 db.set('Jules', 'César')
@@ -10,6 +11,8 @@ let res = []
 
 test('search Céline', () => {
   const celine = 'Céline'
+
+  expect(db.get(someId).firstName).toBe(celine)
 
   res = db.search('Celine')
   expect(res.length).toBe(1)
