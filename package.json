@@ -11,14 +11,13 @@
   "scripts": {
     "build": "tsc",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage",
-    "prepublishOnly": "rimraf lib && npm run build && npm test"
+    "prepublishOnly": "npx -y rimraf lib && npm run build && npm test"
   },
   "keywords": [],
   "author": "Yannick Deubel (https://github.com/yandeu)",
   "license": "MIT",
   "devDependencies": {
     "jest": "^28.1.1",
-    "rimraf": "^3.0.2",
     "typescript": "^4.7.4"
   },
   "repository": {
