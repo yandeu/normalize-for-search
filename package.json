@@ -1,7 +1,7 @@
 {
   "name": "@yandeu/normalize-for-search",
   "description": "Un-accents and un-umlauts characters in a string.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "type": "module",
@@ -11,7 +11,7 @@
   "scripts": {
     "build": "tsc",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage",
-    "prepublishOnly": "npx -y rimraf lib && npm run build && npm test"
+    "prepublishOnly": "npx -y rimraf lib && npm i && npm run build && npm test"
   },
   "keywords": [],
   "author": "Yannick Deubel (https://github.com/yandeu)",
